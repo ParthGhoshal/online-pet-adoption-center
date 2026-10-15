@@ -1,22 +1,12 @@
 package src;
 
-public class Pet {
-    private String name;
-    private String breed;
-    private int age;
-    private boolean isAdopted;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("=== Welcome to the Online Pet Adoption Center ===");
 
-    public Pet(String name, String breed, int age) {
-        this.name = name;
-        this.breed = breed;
-        this.age = age;
-        this.isAdopted = false;
+        // Sample object creation to show project scope
+        Pet samplePet = new Pet("Buddy", "Golden Retriever", 2);
+        System.out.println("Featured Pet: " + samplePet.getName() + " (" + samplePet.getBreed() + ")");
+        System.out.println("System Status: Ready for Review 1");
     }
-
-    public String getName() { return name; }
-    public String getBreed() { return breed; }
-    public int getAge() { return age; }
-    public boolean isAdopted() { return isAdopted; }
-
-    public void setAdopted(boolean adopted) { isAdopted = adopted; }
 }
